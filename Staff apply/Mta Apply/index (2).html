@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>تقديم علي ادارة ام تي ايه</title>
+        <link rel="icon" type="image/png" href="bg1.png" />
+        <link href="bootstrap.min.css" rel="stylesheet">
+    </head>
+<body>
+<style>
+    body{
+        text-align: center;
+        background-image: url(Screenshot_20200603-062427.png);
+        color: bisque;
+        text-size-adjust: 40px;
+    }
+    .btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+</style>
+
+<h2>اضغط علي هذا الزر ليظهر لك رقم السؤال الذي يجب عليك الاجابة عليه ويجب عليك ان تجاوب علي 5 اسئلة</h2>
+
+<button class="btn btn-primary" onclick="myFunction()">اضغط</button>
+
+
+<p id="demo"></p>
+<div>
+    <img src="rules1.png" style="width: 100%; height: 20%;" />
+</div>
+
+<div class="form-group" style="width: 50%;margin-left: 25%;margin-right: 25%;">
+    <label>: اجابتك </label>
+    <textarea class="form-control" rows="3" name="bio" placeholder="اكتب هنا" required></textarea>
+</div>
+<button type="submit" class="btn btn-primary" name="register">Submit</button>
+<h2>للعلم سيتم اختيار مجموعة من المقدمين وليس كلهم بمعني انه لا يشترط حلك لجميع الاسئلة القبول الفوري ولكن عندما تجاوب جميع الاسئلة بشكل صحيح يزيد من احتمالية اختيارك وان تم اختيارك سيتم اختبارك صوتياً في الاوامر وشكراً</h2>
+<script>
+function myFunction() {
+  var x = document.getElementById("demo")
+  x.innerHTML = Math.floor((Math.random() * 45) + 1);
+}
+</script>
+
+</body>
+</html>

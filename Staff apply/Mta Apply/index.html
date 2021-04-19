@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="bg1.png" />
+
+<title>تقديم علي ادارة ام تي ايه</title>
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="col" id="notification">
+                <?php echo $message_alert; ?>
+            </div>
+            <div class="regForm">
+                <h1>تقديم ادارة ام تي ايه </h1>
+                <form action="<?php $_SERVER['PHP_SELF'];?>" method="POST">
+                    <div class="form-group">
+                        <label>اسمك بالديسكورد</label>
+                        <input type="text" class="form-control" name="fullName" placeholder="ادخل اسمك بالكامل" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>اسمك الحقيقي</label>
+                        <input type="text" class="form-control" name="fullName" placeholder="ادخل اسمك بالكامل" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>عمرك</label>
+                        <input type="number" class="form-control" name="age" placeholder="ادخل عمرك" max="100" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>تاريخ ميلادك</label>
+                        <input type="date" class="form-control" name="dob" required>
+                    </div>
+                    
+                    <fieldset class="form-group">
+                        <div class="row">
+                          <legend class="col-form-label col-sm-2 pt-0">النوع</legend>
+                          <div class="col-sm-10">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gender" value="Male" required>
+                              <label class="form-check-label">ذكر</label>
+                            </div>
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gender" value="Female" required>
+                              <label class="form-check-label">انثي</label>
+                            </div>
+                          </div>
+                        </div>
+                    </fieldset>
+                    
+                    
+                    <div class="form-group">
+                        <label>لما اخترت فورسكاي ؟</label>
+                        <textarea class="form-control" rows="3" name="bio" placeholder="اكتب هنا" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>ما تعريفك للحياة الواقعية ؟</label>
+                        <textarea class="form-control" rows="3" name="bio" placeholder="اكتب هنا" required></textarea>
+                    </div>
+                    <button class="btn btn-primary"><a href="index (2).html"> تكملة الاختبار</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
